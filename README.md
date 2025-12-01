@@ -45,7 +45,7 @@ Built with **React**, **Node.js**, **Express**, **Prisma**, and **PostgreSQL**.
 - Groq API integration  
 
 ### **Database**
-- PostgreSQL (Local, Supabase, Neon, or Railway)
+- PostgreSQL 
 
 ### **Dev Tools**
 - Docker
@@ -53,6 +53,7 @@ Built with **React**, **Node.js**, **Express**, **Prisma**, and **PostgreSQL**.
 ---
 
 ## 📁 Folder Structure
+<pre>
 project/
 ├── prisma/                 # Prisma schema and migrations
 ├── public/                 # Public assets (icons/media)
@@ -80,4 +81,4 @@ project/
 ├── server.ts               # Server entry or API extension layer
 ├── tsconfig.json           # TypeScript configuration
 └── README.md               # Project documentation
-
+</pre>
