@@ -68,11 +68,11 @@ project/
 │   ├── middleware/         # API / auth / edge middleware
 │   ├── pages/              # API routes or legacy Next.js pages (if used)
 │   └── types/              # TypeScript definitions & interfaces
-├── tests/                  # Jest / Playwright tests
+├── tests/                  # Jest / Playwright tests (pending)
 ├── .gitignore
 ├── env.d.ts                # Environment variable type declarations
 ├── eslint.config.mjs       # ESLint configuration
-├── jest.config.js       
+├── jest.config.js          # Jest testing configuration
 ├── next.config.ts          # Next.js project configuration
 ├── package.json
 ├── package-lock.json
