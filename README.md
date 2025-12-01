@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# School Management System  
+A full-stack application designed to streamline academic, financial, and administrative operations for schools.  
+Built with **React**, **Node.js**, **Express**, **Prisma**, and **PostgreSQL**.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📊 Dashboard
+- Displays daily fee credits, salary deductions, overall student count, and class-wise attendance summaries.
+- Provides administrators with a quick overview of key academic and financial metrics.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🤖 AI Question Generator
+- Generates quiz and test questions using the Groq API.
+- Supports adjustable difficulty levels for teachers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 💰 Finance Module
+- Fee collection and payment tracking.
+- Salary processing for staff.
+- Receipt generation and complete transaction history.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📝 Attendance Management
+- Class-wise attendance tracking.
+- Bulk update functionality.
+- Monthly summary reports with automatic status calculations.
 
-## Learn More
+### 🧑‍🎓 Student & Class Administration
+- Add and manage student records.
+- Create and update classes.
+- Centralized interface for monitoring academic activity.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧰 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Frontend**
+- React    
+- MUI CSS
 
-## Deploy on Vercel
+### **Backend**
+- Node.js  
+- Express  
+- Prisma ORM  
+- REST APIs  
+- Groq API integration  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Database**
+- PostgreSQL (Local, Supabase, Neon, or Railway)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Dev Tools**
+- Docker
+
+---
+
+## 📁 Folder Structure
+project/
+├── prisma/                 # Prisma schema and migrations
+├── public/                 # Public assets (icons/media)
+├── src/
+│   ├── app/                # Application routes & UI (Next.js App Router)
+│   │    ├── api/           # Backend APIs
+│   │    └── Pages          # Frontend Pages and Components
+│   │ 
+│   ├── context/            # Global state providers
+│   ├── hooks/              # Reusable custom hooks
+│   ├── lib/                # Utilities, helpers, and config
+│   ├── middleware/         # API / auth / edge middleware
+│   ├── pages/              # API routes or legacy Next.js pages (if used)
+│   └── types/              # TypeScript definitions & interfaces
+├── tests/                  # Jest / Playwright tests
+├── .gitignore
+├── env.d.ts                # Environment variable type declarations
+├── eslint.config.mjs       # ESLint configuration
+├── jest.config.js       
+├── next.config.ts          # Next.js project configuration
+├── package.json
+├── package-lock.json
+├── playwright.config.ts    # Playwright testing configuration
+├── random.ts               # Scratch / experimental file
+├── server.ts               # Server entry or API extension layer
+├── tsconfig.json           # TypeScript configuration
+└── README.md               # Project documentation
+
